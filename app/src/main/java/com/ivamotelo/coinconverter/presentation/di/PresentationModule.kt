@@ -1,4 +1,22 @@
 package com.ivamotelo.coinconverter.presentation.di
 
-class PresentationModule {
+import com.ivamotelo.coinconverter.presentation.HistoryViewModel
+import com.ivamotelo.coinconverter.presentation.MainViewModel
+import org.koin.core.module.Module
+import org.koin.androidx.viewmodel.dsl.viewModel
+import org.koin.core.context.loadKoinModules
+import org.koin.dsl.module
+
+object PresentationModule {
+
+    fun load() {
+        loadKoinModules(viewModelModules())
+    }
+
+    private fun viewModelModules(): Module {
+        return module {
+            viewModel { HistoryViewModel(get()) }
+            viewModel { MainViewModel(get(), get()) }
+        }
+    }
 }

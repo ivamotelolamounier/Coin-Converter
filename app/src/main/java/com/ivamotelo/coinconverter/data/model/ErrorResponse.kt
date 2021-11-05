@@ -1,4 +1,7 @@
 package com.ivamotelo.coinconverter.data.model
 
-class ErrorResponse {
-}
+data class ErrorResponse (
+    val status: Long,
+    val code: String,
+    val message: String
+)

@@ -1,4 +1,3 @@
 package com.ivamotelo.coinconverter.core.exceptions
 
-class RemoteException {
-}
+class RemoteException(override val message: String) : Throwable()

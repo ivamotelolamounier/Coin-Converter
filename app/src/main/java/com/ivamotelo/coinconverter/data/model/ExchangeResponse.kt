@@ -1,3 +1,7 @@
+/**
+ * https://docs.awesomeapi.com.br/api-de-moedas
+ * https://app.quicktype.io/
+ */
 package com.ivamotelo.coinconverter.data.model
 
 import androidx.room.Entity

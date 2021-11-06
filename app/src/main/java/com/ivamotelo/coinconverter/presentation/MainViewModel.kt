@@ -3,6 +3,7 @@ package com.ivamotelo.coinconverter.presentation
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import com.ivamotelo.coinconverter.data.model.ExchangeResponseValue
 import com.ivamotelo.coinconverter.domain.GetExchangeValueUseCase
 import com.ivamotelo.coinconverter.domain.SaveExchangeUseCase
@@ -11,7 +12,6 @@ import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.onStart
-import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.launch
 
 class MainViewModel(

@@ -1,11 +1,14 @@
+/**
+ * Define como será a busca das moedas
+ */
 package com.ivamotelo.coinconverter.data.repository
 
+import com.google.gson.Gson
 import com.ivamotelo.coinconverter.core.exceptions.RemoteException
 import com.ivamotelo.coinconverter.data.database.AppDatabase
 import com.ivamotelo.coinconverter.data.model.ErrorResponse
 import com.ivamotelo.coinconverter.data.model.ExchangeResponseValue
 import com.ivamotelo.coinconverter.data.services.AwesomeService
-import com.google.gson.Gson
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import retrofit2.HttpException

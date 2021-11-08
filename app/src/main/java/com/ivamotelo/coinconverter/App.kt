@@ -9,6 +9,7 @@ import com.ivamotelo.coinconverter.domain.di.DomainModule
 import com.ivamotelo.coinconverter.presentation.di.PresentationModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
+import android.app.Presentation
 
 class App : Application() {
 

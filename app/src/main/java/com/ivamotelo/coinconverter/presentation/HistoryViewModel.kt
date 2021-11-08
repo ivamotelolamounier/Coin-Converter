@@ -1,12 +1,6 @@
 package com.ivamotelo.coinconverter.presentation
 
-import androidx.lifecycle.Lifecycle
-import androidx.lifecycle.LifecycleObserver
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.OnLifecycleEvent
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
+import androidx.lifecycle.*
 import com.ivamotelo.coinconverter.data.model.ExchangeResponseValue
 import com.ivamotelo.coinconverter.domain.ListExchangeUseCase
 import kotlinx.coroutines.Dispatchers

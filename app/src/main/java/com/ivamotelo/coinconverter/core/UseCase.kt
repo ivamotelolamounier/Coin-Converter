@@ -2,7 +2,6 @@ package com.ivamotelo.coinconverter.core
 
 import kotlinx.coroutines.flow.Flow
 
-
 abstract class UseCase<Param, Source> {
     abstract suspend fun execute(param: Param): Flow<Source>
 
